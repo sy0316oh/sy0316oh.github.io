@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>PieChartIDcf04cc65148</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- PieChart generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Mon May 30 15:37:55 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataPieChartIDcf04cc65148 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Australia",
+23117353 
+],
+[
+ "Japan",
+127338621 
+],
+[
+ "Canada",
+35155499 
+],
+[
+ "Brazil",
+204259377 
+],
+[
+ "France",
+65925498 
+] 
+];
+data.addColumn('string','Country.Name');
+data.addColumn('number','Population');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartPieChartIDcf04cc65148() {
+var data = gvisDataPieChartIDcf04cc65148();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Country and Population";
+options["pieHole"] =    0.5;
+options["slices"] = {0:{offset:0.7}};
+options["width"] =    600;
+options["height"] =    600;
+
+
+    var chart = new google.visualization.PieChart(
+    document.getElementById('PieChartIDcf04cc65148')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartPieChartIDcf04cc65148);
+})();
+function displayChartPieChartIDcf04cc65148() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartIDcf04cc65148"></script>
+ 
+<!-- divChart -->
+  
+<div id="PieChartIDcf04cc65148" 
+  style="width: 600; height: 600;">
+</div>
+ <div><span>Data: C.df &#8226; Chart ID: <a href="Chart_PieChartIDcf04cc65148.html">PieChartIDcf04cc65148</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.2.3 (2015-12-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
