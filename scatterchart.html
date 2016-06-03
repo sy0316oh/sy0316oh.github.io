@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ScatterChartIDcf025456344</title>
+<title>ScatterChartID72843c2e23</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,14 +18,14 @@ body {
 </head>
 <body>
  <!-- ScatterChart generated in R 3.2.3 by googleVis 0.5.10 package -->
-<!-- Mon May 30 14:25:14 2016 -->
+<!-- Wed Jun 01 15:46:56 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartIDcf025456344 () {
+function gvisDataScatterChartID72843c2e23 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -686,21 +686,27 @@ var datajson =
 14898092 
 ] 
 ];
-data.addColumn('number','x');
-data.addColumn('number','y');
+data.addColumn('number','Income.Income');
+data.addColumn('number','Income.Population');
 data.addRows(datajson);
 return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartIDcf025456344() {
-var data = gvisDataScatterChartIDcf025456344();
+function drawChartScatterChartID72843c2e23() {
+var data = gvisDataScatterChartID72843c2e23();
 var options = {};
 options["allowHtml"] = true;
+options["title"] = "Correlation between Income and Population";
+options["pointShape"] = "polygon";
+options["hAxis"] = {title:'Income'};
+options["vAxis"] = {title:'Population'};
+options["width"] =    500;
+options["height"] =    400;
 
 
     var chart = new google.visualization.ScatterChart(
-    document.getElementById('ScatterChartIDcf025456344')
+    document.getElementById('ScatterChartID72843c2e23')
     );
     chart.draw(data,options);
     
@@ -724,9 +730,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartIDcf025456344);
+callbacks.push(drawChartScatterChartID72843c2e23);
 })();
-function displayChartScatterChartIDcf025456344() {
+function displayChartScatterChartID72843c2e23() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -750,23 +756,23 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartIDcf025456344"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID72843c2e23"></script>
  
 <!-- divChart -->
   
-<div id="ScatterChartIDcf025456344" 
-  style="width: 500; height: automatic;">
+<div id="ScatterChartID72843c2e23" 
+  style="width: 500; height: 400;">
 </div>
- <div><span>Data: data1 &#8226; Chart ID: <a href="Chart_ScatterChartIDcf025456344.html">ScatterChartIDcf025456344</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: data1 &#8226; Chart ID: <a href="Chart_ScatterChartID72843c2e23.html">ScatterChartID72843c2e23</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.3 (2015-12-10) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart">Documentation and Data Policy</a>
 </span></div>
 <div>
-  <p> 
-  <br><br><br><br> x축은 수입이고, y축은 인구이다. x축과 y축의 상관성은 없다. 제목은 수입에 따른 인구수이다. 
-  </p>
-    </div>
+<p>
+<br><br><br><br> x축은 수입이고, y축은 인구이다. 그래프에서 수입에 따른 인구수를 볼 수 있는데, 둘 사이의 상관성은 없는 것으로 보인다. 
+</p>
+</div>
 </body>
 </html>
