@@ -3,7 +3,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>PieChartIDcf04cc65148</title>
+<title>PieChartID12ec3a116b48</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,15 +18,15 @@ body {
 </style>
 </head>
 <body>
- <!-- PieChart generated in R 3.2.3 by googleVis 0.5.10 package -->
-<!-- Mon May 30 15:37:55 2016 -->
+ <!-- PieChart generated in R 3.2.4 by googleVis 0.5.10 package -->
+<!-- Fri Jun 03 16:47:06 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataPieChartIDcf04cc65148 () {
+function gvisDataPieChartID12ec3a116b48 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -58,19 +58,20 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartPieChartIDcf04cc65148() {
-var data = gvisDataPieChartIDcf04cc65148();
+function drawChartPieChartID12ec3a116b48() {
+var data = gvisDataPieChartID12ec3a116b48();
 var options = {};
 options["allowHtml"] = true;
-options["title"] = "Country and Population";
-options["pieHole"] =    0.5;
-options["slices"] = {0:{offset:0.7}};
+options["title"] = "Country of Population";
+options["pieHole"] =    0.4;
+options["slices"] = {0:{offset:0.5},3:{offset:0.2}};
+options["pieStartAngle"] =    100;
 options["width"] =    600;
 options["height"] =    600;
 
 
     var chart = new google.visualization.PieChart(
-    document.getElementById('PieChartIDcf04cc65148')
+    document.getElementById('PieChartID12ec3a116b48')
     );
     chart.draw(data,options);
     
@@ -94,9 +95,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartIDcf04cc65148);
+callbacks.push(drawChartPieChartID12ec3a116b48);
 })();
-function displayChartPieChartIDcf04cc65148() {
+function displayChartPieChartID12ec3a116b48() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -120,18 +121,22 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartIDcf04cc65148"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID12ec3a116b48"></script>
  
 <!-- divChart -->
   
-<div id="PieChartIDcf04cc65148" 
+<div id="PieChartID12ec3a116b48" 
   style="width: 600; height: 600;">
 </div>
- <div><span>Data: C.df &#8226; Chart ID: <a href="Chart_PieChartIDcf04cc65148.html">PieChartIDcf04cc65148</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: C.df &#8226; Chart ID: <a href="Chart_PieChartID12ec3a116b48.html">PieChartID12ec3a116b48</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
-  R version 3.2.3 (2015-12-10) 
+  R version 3.2.4 Revised (2016-03-16 r70336) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart">Documentation and Data Policy</a>
 </span></div>
+<div>
+<p> 5개의 나라를 선택해 인구를 알아보았다. </p>
+<p>이 차트에서는 브라질,일본,프랑스,캐나다,호주 순으로 인구 수가 많다.</p> 
+</div>
 </body>
 </html>
